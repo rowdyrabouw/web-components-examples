@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "formula1";
+  src: url("/assets/fonts/formula1.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  color: #9a0015;
+}
+
+a {
+  color: #9a0015;
+}
+
+body {
+  padding: 1rem 2rem;
+  font-family: "formula1";
+  font-size: 150%;
+  color: #000;
+}
+
+iframe {
+  display: block;
+  margin: 6rem 0 2rem 0;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+}
+
+button {
+  display: block;
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  font-family: "formula1";
+  background-color: #9a0015;
+  border: 1px solid #9a0015;
+  border-radius: 0.5rem;
+  color: #ffffff !important;
+  font-size: 1rem;
+}
+
+.controls {
+  margin-bottom: 1rem;
+  color: #9a0015;
+  font-size: 1.23rem;
+}
+
+#result {
+  margin: 1rem 0;
+}
+
+#map {
+  height: 320px;
+  /* display: none; */
+  visibility: hidden;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+li {
+  padding-bottom: 0.5em;
+}

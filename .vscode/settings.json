@@ -1,0 +1,10 @@
+{
+  "workbench.colorTheme": "Monokai Pro",
+  "files.autoSave": "onFocusChange",
+  "prettier.printWidth": 250,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 18,
+  "editor.fontFamily": "'Mono Lisa', monospace",
+  "editor.renderWhitespace": "trailing",
+  "cSpell.words": ["Danica", "indycar", "Verstappen"]
+}

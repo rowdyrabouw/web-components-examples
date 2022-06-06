@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Lifecycle</h1>
+
+    <div class="controls">
+      <input type="checkbox" id="toggleComponent" checked />
+      <label for="toggleComponent">Add/remove component</label>
+    </div>
+    <div id="component">
+      <example-component value="hello world!" value2="world"></example-component>
+    </div>
+
+    <iframe src="iframe.html" title="iframe"></iframe>
+    <button>Adopt component</button>
+    <div id="adopt"></div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
