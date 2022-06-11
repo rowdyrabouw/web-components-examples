@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      f1-quote::part(quote) {
+        color: white;
+        background-color: black;
+        border: 5px solid red;
+        border-radius: 20px;
+        font-size: 38px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formula 1 & IndyCar quotes</h1>
+    <f1-quote></f1-quote>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
