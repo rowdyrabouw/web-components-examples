@@ -5,7 +5,7 @@
       }
     </style>
 
-2. insert style in index.js
+2. insert style in driver-quote.js
 <style>p { color: #520A77; }</style>
 
 3. add !important to style in index.html

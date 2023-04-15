@@ -1,2 +1,2 @@
-import "./f1-quote.js";
-import "./indycar-quote.js";
+import "./driver-quote.js";
+import "./boss-quote.js";

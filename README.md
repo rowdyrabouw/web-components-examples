@@ -5,7 +5,7 @@
 Most demo's will work with the Live Preview extenson in VS Code
 https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
 
-Some demo's however, need to be run in a standalone browser.
+Some demo's however, should be run in a standalone browser to work properly.
 
 - first open the Live Preview
 - copy the url
@@ -13,11 +13,11 @@ Some demo's however, need to be run in a standalone browser.
 
 These demo's are:
 
-- 02-native-element (clicking external links will display warning inside VS Code)
-- 10-lifecycle (for easier access to Dev Tools)
-- 13-events (for easier access to Dev Tools)
-- 15-video-component (otherwise video's won't play)
-- 16-npm (otherwise video's won't play)
+- 02-native-element
+- 13-lifecycle
+- 14-events
+- 16-video-component
+- 17-npm
 
 ## Useful links
 

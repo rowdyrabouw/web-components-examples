@@ -1,15 +1,15 @@
-1. insert in f1-quote.js
+1. insert in driver-quote.js
 
-class F1Quote extends HTMLElement {
+class DriverQuote extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `<p>Woah! There's a giant lizard on the track! &mdash; Max Verstappen</p>`;
+    this.innerHTML = `<p>Because I'm Dutch &mdash; Max Verstappen</p>`;
   }
 }
 
-customElements.define("f1-quote", F1Quote);
+customElements.define("driver-quote", DriverQuote);
 
 2. insert in index.html
 
-<f1-quote></f1-quote>
-<script src="f1-quote.js"></script>
+<driver-quote></driver-quote>
+<script src="driver-quote.js"></script>

@@ -3,25 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Components</title>
+    <title>CSS Theming | Web Components</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <style>
       :root {
-        --indycar-primary-color: #01ed02;
-        --indycar-secondary-color: #be0275;
-        --indycar-tertiary-color: #000000;
+        --indycar-primary-color2: #01ed02;
+        --indycar-secondary-color2: #be0275;
       }
-      f1-quote.max {
+      f1-quote.max2 {
         --primary-color: #005b9c;
-        --secondary-color: #ffcc01;
-        --tertiary-color: #d2003d;
+        --secondary-color: #ce1b1c;
       }
     </style>
   </head>
   <body>
-    <h1>Formula 1 & IndyCar quotes</h1>
-    <f1-quote class="max"></f1-quote>
-    <indycar-quote></indycar-quote>
+    <h1>CSS Theming</h1>
+    <driver-quote class="max"></driver-quote>
+    <boss-quote></boss-quote>
     <script type="module" src="index.js"></script>
   </body>
 </html>

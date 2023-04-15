@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>::part pseudo-element | Web Components</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      driver-quote::part(quote) {
+        color: white;
+        background-color: #000;
+        border: 5px solid #f74f33;
+        border-radius: 20px;
+        font-size: 38px;
+        padding: 3rem;
+        width: 80%;
+      }
+      driver-quote::part(driver) {
+        color: #f74f33;
+        width: 100%;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>::part <span>pseudo-element</span></h1>
+    <driver-quote></driver-quote>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

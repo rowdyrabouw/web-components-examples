@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Monokai Pro",
+  // "workbench.colorTheme": "Monokai Pro",
   "files.autoSave": "onFocusChange",
   "prettier.printWidth": 250,
   "editor.formatOnSave": true,

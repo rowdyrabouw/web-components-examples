@@ -1,6 +1,8 @@
 const template = document.createElement("template");
-template.innerHTML = `<p><slot></slot></p>`;
-
+template.innerHTML = `
+  <style>@import "quote.css";</style>
+  <blockquote><p><slot></slot></p><cite></cite></blockquote>
+`;
 class DriverQuote extends HTMLElement {
   constructor() {
     super();
