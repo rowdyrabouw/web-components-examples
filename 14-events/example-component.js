@@ -22,6 +22,7 @@ class ExampleComponent extends HTMLElement {
       .then((res) => res.json())
       .then((data) => {
         this._circuits = data.MRData.CircuitTable.Circuits;
+        console.log(this._circuits);
       });
 
     this.attachShadow({ mode: "open" });

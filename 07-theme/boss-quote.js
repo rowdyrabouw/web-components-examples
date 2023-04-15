@@ -3,14 +3,14 @@ template.innerHTML = `
   <style>@import "quote.css";</style>
   <style>
     :host {
-      --primary-color: #81171B;
-      --secondary-color: #FF6978;
+      --primary-color: #000;
+      --secondary-color: #000;
     }
     blockquote { 
-      color: var(--primary-color);
+      color: var(--boss-primary-color, var(--primary-color));
     }
     cite {
-      color: var(--secondary-color);
+      color: var(--boss-secondary-color, var(--secondary-color));
     }
   </style>
   <blockquote><p>Mikey, that is so not right. That is so not right.</p><cite>Toto Wolff</cite></<blockquote>

@@ -36,11 +36,21 @@ body {
   background-color: #fff;
 }
 
-iframe {
+iframe,
+video,
+#map {
   display: block;
+  border: 4px solid #e10601;
+}
+
+iframe,
+video {
   margin: 6rem 0 2rem 0;
-  border: 1px solid #000000;
-  border-radius: 0.5rem;
+}
+
+video-component {
+  display: block;
+  margin-bottom: 2rem;
 }
 
 button {

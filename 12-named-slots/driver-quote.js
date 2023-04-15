@@ -40,11 +40,6 @@ template.innerHTML = `
     <blockquote><p><slot></slot></p></blockquote>
   </div>
 `;
-// template.innerHTML = `
-//   <style>@import "quote.css";</style>
-//   <img alt="">
-//   <blockquote><p><slot></slot></p><cite><slot name="driver"></slot></cite></blockquote>
-// `;
 
 class DriverQuote extends HTMLElement {
   static get observedAttributes() {

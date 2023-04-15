@@ -3,8 +3,8 @@ template.innerHTML = `
   <style>@import "quote.css";</style>
   <style>
     :host {
-      --primary-color: #D81E5B;
-      --secondary-color: #48A9A6;
+      --primary-color: #000;
+      --secondary-color: #000;
     }
     blockquote { 
       color: var(--primary-color);

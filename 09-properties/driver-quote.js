@@ -26,11 +26,21 @@ class DriverQuote extends HTMLElement {
     return this._quote;
   }
 
+  set driver(value) {
+    this._driver = value;
+    this.driverElement.innerHTML = this._driver;
+  }
+
+  get driver() {
+    return this._driver;
+  }
+
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
     this.quoteElement = this.shadowRoot.querySelector("p");
+    this.driverElement = this.shadowRoot.querySelector("cite");
   }
 }
 
