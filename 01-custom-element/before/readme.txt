@@ -1,4 +1,4 @@
-1. insert in driver-quote.js
+1.create driver-quote.js
 
 class DriverQuote extends HTMLElement {
   constructor() {
