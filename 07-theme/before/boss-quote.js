@@ -7,10 +7,10 @@ template.innerHTML = `
       --secondary-color: #000;
     }
     blockquote { 
-      color: var(--boss-primary-color, var(--primary-color));
+      color: var(--primary-color);
     }
     cite {
-      color: var(--boss-secondary-color, var(--secondary-color));
+      color: var(--secondary-color);
     }
   </style>
   <blockquote><p>Mikey, that is so not right. That is so not right.</p><cite>Toto Wolff</cite></<blockquote>
