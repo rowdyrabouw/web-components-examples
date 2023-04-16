@@ -1,11 +1,11 @@
 1. insert style in index.html
     <style>
-      p {
-        color: #3c90c1;
+      blockquote {
+        color: #24316e;
       }
     </style>
 
 2. insert style in driver-quote.js
-<style>p { color: #520A77; }</style>
+<style>blockquote { color: #f74f33; }</style>
 
 3. add !important to style in index.html
