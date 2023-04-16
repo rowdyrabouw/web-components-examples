@@ -3,7 +3,7 @@
 class DriverQuote extends HTMLElement {
   constructor() {
     super();
-    this.innerHTML = `<p>Because I'm Dutch &mdash; Max Verstappen</p>`;
+    this.innerHTML = `<blockquote><p>Because I'm Dutch</p><cite>Max Verstappen</cite></blockquote>`;
   }
 }
 
