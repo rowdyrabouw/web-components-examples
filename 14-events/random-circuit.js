@@ -13,7 +13,7 @@ template.innerHTML = `
   </style>
   <button>Dispatch event</button>`;
 
-class ExampleComponent extends HTMLElement {
+class RandomCircuit extends HTMLElement {
   static _circuits;
 
   constructor() {
@@ -27,13 +27,13 @@ class ExampleComponent extends HTMLElement {
 
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
-    this.shadowRoot.querySelector("button").addEventListener("click", () => this._dispatchClick());
+    this.shadowRoot.querySelector("button").addEventListener("click", () => this.dispatchClick());
   }
 
-  _dispatchClick() {
+  dispatchClick() {
     const randomCircuit = this._circuits[Math.floor(Math.random() * this._circuits.length)];
-    this.dispatchEvent(new CustomEvent("webComponentClick", { detail: randomCircuit }));
+    this.dispatchEvent(new CustomEvent("getRandomCircuit", { detail: randomCircuit }));
   }
 }
 
-customElements.define("example-component", ExampleComponent);
+customElements.define("random-circuit", RandomCircuit);

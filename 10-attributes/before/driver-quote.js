@@ -18,7 +18,7 @@ template.innerHTML = `
 
 class DriverQuote extends HTMLElement {
   static get observedAttributes() {
-    return ["quote", "driver"];
+    return ["data-quote", "data-driver"];
   }
 
   set quote(value) {
@@ -48,12 +48,11 @@ class DriverQuote extends HTMLElement {
   }
 
   attributeChangedCallback(attrName, oldValue, newValue) {
-    console.warn(attrName);
     switch (attrName) {
-      case 'quote':
+      case "data-quote":
         this.quote = newValue;
         break;
-      case 'driver':
+      case "data-driver":
         this.driver = newValue;
         break;
     }

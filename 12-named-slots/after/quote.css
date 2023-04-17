@@ -1,0 +1,39 @@
+blockquote {
+  font-size: 1.75rem;
+  width: 90%;
+  margin: 4rem auto;
+}
+
+blockquote p {
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+blockquote p::before,
+blockquote p::after {
+  content: "“";
+  font-family: Georgia;
+  font-size: 6rem;
+  font-weight: normal;
+  margin: -2rem 0 0 -2.5rem;
+  position: absolute;
+  opacity: 0.5;
+  text-shadow: 2px 3px 0px #fff, 2px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+blockquote p::after {
+  content: "”";
+  margin: -1rem -3rem 0 0;
+}
+
+blockquote cite {
+  font-size: 1.5rem;
+  display: inline-block;
+  font-style: normal;
+  padding-top: 0.5em;
+}
+
+blockquote cite::before {
+  content: "— ";
+}

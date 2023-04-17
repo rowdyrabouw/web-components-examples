@@ -1,11 +1,12 @@
 class DriverDetail extends HTMLElement {
+
   get driver() {
     return this._driver;
   }
 
   set driver(value) {
     this._driver = value;
-    this._render();
+    this.render();
   }
 
   constructor() {
@@ -13,10 +14,12 @@ class DriverDetail extends HTMLElement {
     this.attachShadow({ mode: "open" });
   }
 
-  _properDate(str) {
-    return str.split("-").reverse().join("-");
+  readableDate(dateString) {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString("en-GB", options);
   }
-  _render() {
+
+  render() {
     this.shadowRoot.innerHTML = `
       <style>
         ul {
@@ -32,7 +35,7 @@ class DriverDetail extends HTMLElement {
         <li>Driver code: ${this.driver.code}</li>
         <li>Permanent number: ${this.driver.permanentNumber}</li>
         <li>Nationality: ${this.driver.nationality}</li>
-        <li>Date of birth: ${this._properDate(this.driver.dateOfBirth)}</li>
+        <li>Date of birth: ${this.readableDate(this.driver.dateOfBirth)}</li>
       </ul>
     `;
   }

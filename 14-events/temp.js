@@ -15,7 +15,6 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(map);
 
 component.addEventListener("getRandomCircuit", (e) => {
-  console.log(e.detail);
   const circuit = e.detail;
   result.innerHTML = `
     <h2 class="mb0">${circuit.circuitName}</h2>

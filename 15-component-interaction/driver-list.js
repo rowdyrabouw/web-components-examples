@@ -18,7 +18,7 @@ class DriverList extends HTMLElement {
 
   set drivers(value) {
     this._drivers = value;
-    this._render();
+    this.render();
   }
 
   constructor() {
@@ -28,7 +28,7 @@ class DriverList extends HTMLElement {
     this.driverListElement = this.shadowRoot.querySelector("select");
   }
 
-  _render() {
+  render() {
     this._drivers.forEach((driver) => {
       const option = document.createElement("option");
       option.value = driver.driverId;
