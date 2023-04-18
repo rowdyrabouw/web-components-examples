@@ -22,14 +22,18 @@ class DriverQuote extends HTMLElement {
     this.quoteElement.innerHTML = this._quote;
   }
 
-  get quote() { return this._quote; }
+  get quote() {
+    return this._quote;
+  }
 
   set driver(value) {
     this._driver = value;
     this.driverElement.innerHTML = this._driver;
   }
 
-  get driver() { return this._driver; }
+  get driver() {
+    return this._driver;
+  }
 
   constructor() {
     super();
