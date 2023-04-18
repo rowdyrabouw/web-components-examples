@@ -13,7 +13,7 @@ template.innerHTML = `
       color: var(--secondary-color);
     }
   </style>
-  <blockquote><p></p><cite></cite></blockquote>
+  <blockquote><p><slot></slot></p><cite></cite></blockquote>
 `;
 
 class DriverQuote extends HTMLElement {
