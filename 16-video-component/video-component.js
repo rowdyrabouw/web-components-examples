@@ -10,11 +10,11 @@ class VideoComponent extends HTMLElement {
     this.videoElement.innerHTML = `
       <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="640" height="360" type="text/html" 
         src="https://www.youtube.com/embed/${value}?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080&origin=https://youtubeembedcode.com">
-      </iframe>`;
+      </iframe>
+    `;
   }
 
   set vimeo(value) {
-    this._vimeo = value;
     this.videoElement.innerHTML = `
       <iframe width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
         src="https://player.vimeo.com/video/${value}">
