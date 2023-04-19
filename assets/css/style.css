@@ -6,25 +6,51 @@
 }
 
 h1 {
-  color: #9a0015;
+  font-size: 3rem;
+  color: #e10601;
+}
+
+h1 > span {
+  white-space: nowrap;
+}
+
+sub {
+  margin-top: -1.5rem;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 a {
-  color: #9a0015;
+  color: #e10601;
+  font-size: 1.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
 }
 
 body {
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   font-family: "formula1";
-  font-size: 150%;
   color: #000;
+  background-color: #fff;
 }
 
-iframe {
+iframe,
+video,
+#map {
   display: block;
+  border: 4px solid #e10601;
+}
+
+iframe,
+video {
   margin: 6rem 0 2rem 0;
-  border: 1px solid #000000;
-  border-radius: 0.5rem;
+}
+
+video-component {
+  display: block;
+  margin-bottom: 2rem;
 }
 
 button {
@@ -32,8 +58,8 @@ button {
   margin: 2rem 0;
   padding: 0.5rem 1rem;
   font-family: "formula1";
-  background-color: #9a0015;
-  border: 1px solid #9a0015;
+  background-color: #e10601;
+  border: 1px solid #e10601;
   border-radius: 0.5rem;
   color: #ffffff !important;
   font-size: 1rem;
@@ -41,7 +67,7 @@ button {
 
 .controls {
   margin-bottom: 1rem;
-  color: #9a0015;
+  color: #e10601;
   font-size: 1.23rem;
 }
 
@@ -50,9 +76,12 @@ button {
 }
 
 #map {
-  height: 320px;
-  /* display: none; */
+  height: 500px;
   visibility: hidden;
+}
+
+.leaflet-container a {
+  font-size: 0.75rem;
 }
 
 .mb0 {
@@ -61,4 +90,44 @@ button {
 
 li {
   padding-bottom: 0.5em;
+}
+
+blockquote {
+  font-size: 1.75rem;
+  width: 90%;
+  margin: 4rem auto;
+}
+
+blockquote p {
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+blockquote p::before,
+blockquote p::after {
+  content: "“";
+  font-family: Georgia;
+  font-size: 6rem;
+  font-weight: normal;
+  margin: -2rem 0 0 -2.5rem;
+  position: absolute;
+  opacity: 0.5;
+  text-shadow: 2px 3px 0px #fff, 2px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+blockquote p::after {
+  content: "”";
+  margin: -1rem -3rem 0 0;
+}
+
+blockquote cite {
+  font-size: 1.5rem;
+  display: inline-block;
+  font-style: normal;
+  padding-top: 0.5em;
+}
+
+blockquote cite::before {
+  content: "— ";
 }

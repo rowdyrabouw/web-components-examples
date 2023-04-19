@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lifecycle | Web Components</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Lifecycle</h1>
+    <sub>run this demo in a browser, not in VS Code live preview</sub>
+
+    <div class="controls">
+      <input type="checkbox" id="toggleComponent" checked />
+      <label for="toggleComponent">Add/remove component</label>
+    </div>
+    <div id="component">
+      <example-component value="Hello world!"></example-component>
+    </div>
+
+    <iframe src="iframe.html" title="iframe"></iframe>
+    <button>Adopt component</button>
+    <div id="adopt"></div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

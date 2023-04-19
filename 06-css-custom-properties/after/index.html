@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables | Web Components</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      :root {
+        --primary-color: #24316e;
+      }
+      blockquote {
+        color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Variables</h1>
+    <blockquote>
+      <p>If you no longer go for a gap that exists, you’re no longer a racing driver</p>
+      <cite>Ayrton Senna</cite>
+    </blockquote>
+    <driver-quote></driver-quote>
+    <script src="driver-quote.js"></script>
+  </body>
+</html>
