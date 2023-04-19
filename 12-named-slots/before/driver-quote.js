@@ -18,7 +18,7 @@ template.innerHTML = `
 
 class DriverQuote extends HTMLElement {
   static get observedAttributes() {
-    return ["image"];
+    return ["data-image"];
   }
 
   set image(value) {
@@ -38,7 +38,7 @@ class DriverQuote extends HTMLElement {
   }
 
   attributeChangedCallback(attrName, oldValue, newValue) {
-    if (attrName === "image") {
+    if (attrName === "data-image") {
       this.image = newValue;
     }
   }
