@@ -3,7 +3,7 @@ template.innerHTML = `<div></div>`;
 
 class VideoComponent extends HTMLElement {
   static get observedAttributes() {
-    return ["youtube", "vimeo", "html5"];
+    return ["data-youtube", "data-vimeo", "data-html5"];
   }
 
   set youtube(value) {
@@ -39,13 +39,13 @@ class VideoComponent extends HTMLElement {
 
   attributeChangedCallback(attrName, oldValue, newValue) {
     switch (attrName) {
-      case "youtube":
+      case "data-youtube":
         this.youtube = newValue;
         break;
-      case "vimeo":
+      case "data-vimeo":
         this.vimeo = newValue;
         break;
-      case "html5":
+      case "data-html5":
         this.html5 = newValue;
         break;
     }

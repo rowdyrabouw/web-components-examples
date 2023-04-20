@@ -3,7 +3,7 @@ template.innerHTML = "Example Component";
 
 class ExampleComponent extends HTMLElement {
   static get observedAttributes() {
-    return ["value"];
+    return ["data-value"];
   }
 
   constructor() {
